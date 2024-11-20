@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Job: Basquete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Paixão pelo Basquete</h1>
+        <p>Explorando o mundo do basquete e seu impacto.</p>
+        <nav>
+            <a href="#introduction">Introdução</a> |
+            <a href="#benefits">Benefícios</a> |
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section id="introduction" class="introduction">
+        <h2>Introdução ao Basquete</h2>
+        <p id="introText">O basquete é um esporte dinâmico e desafiador que exige habilidade, trabalho em equipe e dedicação.</p>
+        <button onclick="mostrarHistoria()">Ver História do Basquete</button>
+        <button onclick="contarPalavrasIntroducao()">Contar Palavras</button>
+        <p id="contagemPalavras"></p>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Benefícios do Basquete</h2>
+        <ul>
+            <li>Melhora da resistência física</li>
+            <li>Fortalecimento muscular</li>
+            <li>Desenvolvimento da coordenação motora</li>
+        </ul>
+        <button onclick="mostrarBeneficio()">Destaque Benefício</button>
+    </section>
+
+    <aside class="info">
+        <h3>Curiosidade</h3>
+        <p>O basquete é um dos esportes mais populares nos Estados Unidos.</p>
+        <button onclick="alertaUsuario()">Saiba Mais</button>
+    </aside>
+
+    <footer id="contact" class="footer">
+        <p>© 2024 Meu Job - Basquete</p>
+        <form onsubmit="return validarConteudo()">
+            <label for="email">Receba mais informações:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
